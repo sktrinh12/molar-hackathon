@@ -4,5 +4,5 @@ st.markdown('# Hackaton project')
 
 df=pd.read_csv('https://raw.githubusercontent.com/napoles-uach/Nanostring/main/Kidney_Sample_Annotations.csv')
 
-df.head()
+st.write(df.head())
 
