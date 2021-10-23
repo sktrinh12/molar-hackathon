@@ -15,6 +15,8 @@ st.markdown('SlideName: '+slidename)
 
 df1=df[['ROICoordinateX','ROICoordinateY','SlideName']]
 
+df1=df1[df1['SlideName']=='disease3']
+
 c = alt.Chart(df1).mark_circle().encode(
     x='ROICoordinateX', y='ROICoordinateY',color='SlideName')
 
