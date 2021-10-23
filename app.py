@@ -57,7 +57,7 @@ df1=df[['ROICoordinateX','ROICoordinateY','SlideName','pathology','disease_statu
 df1=df1[df1['SlideName']==List_ROI[4]]
 
 c = alt.Chart(df1).mark_circle().encode(
-    x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status')
+    x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status',title='title')
 
 st.altair_chart(c, use_container_width=True)
 # ------
