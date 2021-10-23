@@ -6,5 +6,6 @@ df=pd.read_csv('https://raw.githubusercontent.com/napoles-uach/Nanostring/main/K
 
 st.write(df.head())
 
-st.sidebar.radio('SegmentLabel',['Geometric Segment', 'Pankle','Neg'])
+segment=st.sidebar.radio('SegmentLabel',['Geometric Segment', 'Pankle','Neg'])
+st.sidebar.markdown(segment)
 
