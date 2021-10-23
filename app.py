@@ -7,6 +7,7 @@ df=pd.read_csv('https://raw.githubusercontent.com/napoles-uach/Nanostring/main/K
 st.write(df.head())
 
 segment=st.sidebar.radio('SegmentLabel',['Geometric Segment', 'Pankle','Neg'])
-st.sidebar.markdown(segment)
+st.markdown('SegmentLabel: '+segment)
 
 slidename=st.sidebar.text_input('SlideName')
+st.markdown('SlideName: '+slidename)
