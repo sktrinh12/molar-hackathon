@@ -27,4 +27,6 @@ def plot_map(ii):
 
     st.altair_chart(c, use_container_width=True)
 
-plot_map(0)
+for i in range(6):
+    plot_map(0)
+
