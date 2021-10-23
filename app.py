@@ -9,4 +9,4 @@ st.write(df.head())
 segment=st.sidebar.radio('SegmentLabel',['Geometric Segment', 'Pankle','Neg'])
 st.sidebar.markdown(segment)
 
-slidename=st.sidebar.input_text('SlideName')
+slidename=st.sidebar.text_input('SlideName')
