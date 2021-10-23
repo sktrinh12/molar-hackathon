@@ -13,9 +13,9 @@ st.markdown('SegmentLabel: '+segment)
 slidename=st.sidebar.text_input('SlideName')
 st.markdown('SlideName: '+slidename)
 
-df1=df[['ROICoordinateX','ROICoordinateY']]
+df1=df[['ROICoordinateX','ROICoordinateY','SlideName']]
 
 c = alt.Chart(df1).mark_circle().encode(
-    x='ROICoordinateX', y='ROICoordinateY')
+    x='ROICoordinateX', y='ROICoordinateY',color='SlideName')
 
 st.altair_chart(c, use_container_width=True)
