@@ -11,3 +11,7 @@ st.markdown('SegmentLabel: '+segment)
 
 slidename=st.sidebar.text_input('SlideName')
 st.markdown('SlideName: '+slidename)
+
+df1=df(['ROICoordinateX','ROICoordinateY'])
+
+df1
