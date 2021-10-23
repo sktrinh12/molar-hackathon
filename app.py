@@ -51,3 +51,28 @@ c = alt.Chart(df1).mark_circle().encode(
     x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status')
 
 st.altair_chart(c, use_container_width=True)
+
+# ------
+df1=df[['ROICoordinateX','ROICoordinateY','SlideName','pathology','disease_status']]
+df1=df1[df1['SlideName']==List_ROI[4]]
+
+c = alt.Chart(df1).mark_circle().encode(
+    x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status')
+
+st.altair_chart(c, use_container_width=True)
+# ------
+df1=df[['ROICoordinateX','ROICoordinateY','SlideName','pathology','disease_status']]
+df1=df1[df1['SlideName']==List_ROI[5]]
+
+c = alt.Chart(df1).mark_circle().encode(
+    x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status')
+
+st.altair_chart(c, use_container_width=True)
+# ------
+df1=df[['ROICoordinateX','ROICoordinateY','SlideName','pathology','disease_status']]
+df1=df1[df1['SlideName']==List_ROI[6]]
+
+c = alt.Chart(df1).mark_circle().encode(
+    x='ROICoordinateX', y='ROICoordinateY',color='pathology',size='disease_status')
+
+st.altair_chart(c, use_container_width=True)
