@@ -13,6 +13,9 @@ st.markdown('SegmentLabel: '+segment)
 slidename=st.sidebar.text_input('SlideName')
 st.markdown('SlideName: '+slidename)
 
+List_ROI=['disease3', 'disease4', 'normal3', 'normal4', 'disease1B',
+       'disease2B', 'normal2B']
+
 df1=df[['ROICoordinateX','ROICoordinateY','SlideName','pathology','disease_status']]
 
 df1=df1[df1['SlideName']=='disease3']
