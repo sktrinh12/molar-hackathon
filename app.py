@@ -61,11 +61,11 @@ def rollback_es(client, event, id_val):
 
 # st.write(df1.head())
 
-segment=st.sidebar.radio('SegmentLabel',['Geometric Segment', 'PanCK','Neg'])
-st.markdown('SegmentLabel: '+segment)
+# segment=st.sidebar.radio('SegmentLabel',['Geometric Segment', 'PanCK','Neg'])
+# st.markdown('SegmentLabel: '+segment)
 
-slidename=st.sidebar.text_input('SlideName')
-st.markdown('SlideName: '+slidename)
+# slidename=st.sidebar.text_input('SlideName')
+# st.markdown('SlideName: '+slidename)
 
 List_ROI=['disease3', 'disease4', 'normal3', 'normal4', 'disease1B',
        'disease2B', 'normal2B']
@@ -254,6 +254,10 @@ if st.sidebar.button("Plot"):
     # fig = build_heatmap(choice_slidename, df1, df2)
     st.plotly_chart(fig, height=500)
 
-# for i in range(6):
-#     plot_map(i)
+st.markdown("***")
+st.sidebar.markdown("***")
+st.sidebar.subheader("ROI Scatter:")
+if st.sidebar.button("View"):
+    for i in range(7):
+        plot_map(i)
 
